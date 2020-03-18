@@ -1,5 +1,8 @@
-import { API_KEY, BASE_URL } from "../config/api_config";
 import axios from "axios";
+
+const API_KEY = process.env.REACT_APP_API_KEY;
+console.log(API_KEY);
+const BASE_URL = process.env.REACT_APP_BASE_URL;
 
 export const get = (category, type) => {
   return axios
